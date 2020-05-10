@@ -1,6 +1,6 @@
 spring:
   application:
-    name: server-api
+    name: server-app
 
 server:
   port: 8091
