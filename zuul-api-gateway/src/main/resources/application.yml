@@ -3,10 +3,14 @@ zuul:
   routes:
     server-api:
       path: /server/**
-      serviceId: SERVER-API
+      serviceId: SERVER-APP
+#      above server-api is route-name & path: all requests with /api/server/ .. redirects to service server-app
     client-api:
       path: /client/**
-      serviceId: CLIENT-API
+      serviceId: CLIENT-APP
+    token-service:
+      path: /token/**
+      serviceId: TOKEN-SERVICE
 
 eureka:
   client:
